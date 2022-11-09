@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/newform.css">
+</head>
+<body>
+    <!-- register.html -->
+    <form action="#" method="post" id="theForm">
+        <fieldset><legend>Register</legend>
+			<p>All fields are required.</p>
+			<div class="two"><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName"></div>
+			<div class="two"><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName"></div>
+			<div class="two"><label for="email">Email Address<span class="tooltip">Email must include @ symbol</span></label><input type="email" name="email" id="email"></div>
+			<div class="two"><label for="phone">Phone Number<span class="tooltip">Must be 10 digits</span></label><input type="text" name="phone" id="phone"></div>
+			<div class="two"><label for="city">City</label><input type="text" name="city" id="city"></div>
+			<div class="two"><label for="state">State</label><select name="state" id="state">
+				<option value="">Select a State</option> 
+				<option value="NSW">New South Wales</option> 
+				<option value="QLD">Queensland</option> 
+				<option value="SA">South Australia</option> 
+				<option value="TAS">Tasmania</option> 
+				<option value="VIC">Victoria</option> 
+				<option value="WA">Wentern Australia</option>           
+			</select></div>    
+			<div class="two"><label for="zip">Post Code</label><input type="text" name="zip" id="zip"></div>
+			<div class="one"><input type="checkbox" name="terms" id="terms"> I agree to the terms, whatever they are.</div>
+			<div class="one"><input type="submit" value="Register" id="submit"></div>
+        </fieldset>
+    </form>
+    <script src="js/utilities.js"></script>
+    <script src="js/errorMessages.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
